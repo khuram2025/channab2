@@ -7,6 +7,9 @@ final Color kwhitish = Color(0xfff5f5f5);
 final Color kblackash = Color(0xff171826);
 
 
+const defaultPadding = 16.0;
+
+
 
 
 
