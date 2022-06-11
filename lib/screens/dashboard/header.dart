@@ -35,8 +35,25 @@ class SearchField extends StatelessWidget {
         fillColor: Colors.white,
         filled: true,
         border: OutlineInputBorder(
-          borderSide: BorderSide.none,
-          borderRadius: BorderRadius.all(Radius.circular(10))
+          borderSide: BorderSide(
+              color: Colors.green.shade400
+          ),
+          borderRadius: BorderRadius.all(Radius.circular(10)),
+
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderSide: BorderSide(
+              color: Colors.green.shade400
+          ),
+          borderRadius: BorderRadius.all(Radius.circular(10)),
+
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderSide: BorderSide(
+              color: Colors.green.shade400
+          ),
+          borderRadius: BorderRadius.all(Radius.circular(10)),
+
         ),
         suffixIcon: InkWell(
           onTap: (){},
@@ -46,6 +63,7 @@ class SearchField extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.green.shade400,
               borderRadius: BorderRadius.all(Radius.circular(10)),
+
             ),
             child: SvgPicture.asset("assets/icons/Search.svg", color: Colors.white,),
           ),
@@ -67,12 +85,12 @@ class ProfileCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
           borderRadius: const BorderRadius.all(Radius.circular(10)),
-          border: Border.all(color: Colors.white10)
+          border: Border.all(color: Colors.green.shade300)
 
       ),
       child: Row(
         children: [
-          Image.asset("assets/images/profile_pic.png", height: 38,),
+          Image.asset("assets/images/profile_pic.png", height: 33,),
           if(!Responsive.isMobile(context))
             Padding(padding: EdgeInsets.symmetric(horizontal: defaultPadding/2),
               child: Text("Khan Ji"),

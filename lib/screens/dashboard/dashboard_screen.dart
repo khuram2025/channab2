@@ -12,6 +12,7 @@ class DashboardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: SingleChildScrollView(
+          padding: EdgeInsets.all(defaultPadding),
           primary: false,
           child: Column(
             children: [
@@ -28,11 +29,12 @@ class DashboardScreen extends StatelessWidget {
 
                         ],
                   )),
+                  SizedBox(height: defaultPadding),
                   Expanded(
                       flex: 2,
-                      child: Column(
-                        children: [
-                        ],
+                      child: Container(
+                        color: Colors.green,
+                        height: 300,
                       ))
 
                 ],
