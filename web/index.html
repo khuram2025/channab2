@@ -40,6 +40,31 @@
   <script src="flutter.js" defer></script>
 </head>
 <body>
+
+<script  src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+<script  src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyDms454R9d8LfjCXRD8k7jJOyDyRqFslQY",
+    authDomain: "channabstore01.firebaseapp.com",
+    projectId: "channabstore01",
+    storageBucket: "channabstore01.appspot.com",
+    messagingSenderId: "133363737651",
+    appId: "1:133363737651:web:0888367552eb330d3b6f46",
+    measurementId: "G-W6GDXY94RT"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+
+
   <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
